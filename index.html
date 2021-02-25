@@ -4,16 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=+, initial-scale=1.0">
+    <link rel="stylesheet" href="./webfonts/all.css">
     <link rel="stylesheet" href="./style.css">
     <title>Parallex website</title>
 </head>
 <body>
+    <!-- ------------------------------------------------------------NAVBAR START----------------------------------------------------------- -->
+
+    <nav class="nav">
+        <div class="container">
+            <h1>PARALLEX WEBSITE</h1>
+            <div class="list">
+                <div class="list-items"><a href="#">HOME</a></div>
+                <div class="list-items"><a href="#intro">INTRO</a></div>
+                <div class="list-items"><a href="#key">KEYBOARD</a></div>
+                <div class="list-items"><a href="#joy">CONTROLLER</a></div>
+                <div class="list-items"><a href="#fin">DEBATE</a></div>
+            </div>
+            <div class="soc">
+                <span><a href="https://github.com/BLooDBRothER" target="_blank"><i class="fab fa-github-alt"></i></a></span>
+                <span><a href=""><i class="fab fa-instagram-square"></i></a></span>
+                <span><a href=""><i class="fab fa-twitter-square"></i></a></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ------------------------------------------------------------NAVBAR END----------------------------------------------------------- -->
+
+    <!-- ------------------------------------------------------------MAIN START----------------------------------------------------------- -->
+
+
     <div class="pimg1" id="img1">
         <div class="header-text">
             <h1 class="header">JOYSTICK vs KEYBOARD</h1>
         </div>
     </div>
-    <section class="intro">
+    <section class="intro" id="intro">
         <h3>INTRODUCTION</h3>
         <p class="intro-cnt">Console controllers vs keyboard and mouse: It’s a divisive topic among gamers, 
             especially those who have a strong preference for either console or PC gaming. 
@@ -28,7 +54,7 @@
             <h1 class="header">KEYBOARD</h1>
         </div>
     </div>
-    <section class="key">
+    <section class="key" id="key">
         <h3>KEYBOARD</h3>
         <p class="key-cnt">The major reason why you might want to use a mouse and keyboard is because of their precision.
             By nature of their design, mice provide a level of accuracy that you just can’t get with a controller.
@@ -53,7 +79,7 @@
             <h1 class="header">JOYSTICK</h1>
         </div>
     </div>
-    <section class="joy">
+    <section class="joy" id="joy">
         <h3>JOYSTICK</h3>
         <p class="joy-cnt">Controllers are most commonly used for console gaming, but many PC gamers incorporate them into their arsenals too.
             One of the major reasons why controllers often win out is simply because they’re more portable,
@@ -70,7 +96,7 @@
             <h1 class="header">Which one is better?</h1>
         </div>
     </div>
-    <section class="fin">
+    <section class="fin" id="fin">
         <h3>Final Debate!</h3>
         <p class="fin-cnt">Yes, that’s right -- in the great debate of controller vs keyboard and mouse,
             you don’t necessarily have to choose a side. Modern computers and consoles have excellent compatibility for either.</p>
@@ -88,6 +114,8 @@
             a keyboard and mouse setup only allows for binary control input.</p>
             <h1>THE WINNER IS UP TO YOU</h1>
     </section>
+
+    <!-- ------------------------------------------------------------MAIN END----------------------------------------------------------- -->
 
     <script src="./main.js"></script>
 </body>
