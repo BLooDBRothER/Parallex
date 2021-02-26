@@ -6,6 +6,7 @@ body, html{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1rem;
     color: #888;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -28,8 +29,8 @@ body, html{
 
 
 /* ------------------------------------------------------------NAVBAR START----------------------------------------------------------- */
-.menu-open{
-    position: absolute;
+.menu-open {
+    position: fixed;
     right: 10%;
     height: 50px;
     align-items: center;
@@ -37,6 +38,11 @@ body, html{
     font-size: 1.4rem;
     z-index: 2;
     display: none;
+    transform: rotateX('90deg');
+}
+
+.menu-open i{
+    transition: transform .5s ease-in;
 }
 
 .nav a{
@@ -48,6 +54,7 @@ body, html{
     font-size: 1.4rem;
     color: #fb8500;
     cursor: pointer;
+    transition: margin-bottom .5s ease;
 }
 
 .nav{
@@ -68,6 +75,11 @@ body, html{
     flex-wrap: nowrap;
     height: 0;
     overflow: hidden;
+    transition: height .5s ease;
+}
+
+.hg{
+    height: 400px;
 }
 
 .list{
@@ -75,6 +87,7 @@ body, html{
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    transition: none;
 }
 
 .list .list-items{
@@ -262,6 +275,7 @@ section h3{
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+        overflow: auto;
     }
 
     .container h1{
