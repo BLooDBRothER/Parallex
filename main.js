@@ -15,11 +15,13 @@ function toggleopen(){
     var mr = document.getElementById("title");
     var ic = document.getElementById("m-o");
     if(hg.className == "container"){
+        mr.style.transition = "margin-bottom .5s ease-in"
         hg.className += " hg";
         mr.style.marginBottom = "1rem";
         ic.style.transform = "rotate(180deg)";
     }
     else{
+        mr.style.transition = "margin-bottom 0s ease-in"
         hg.className = "container";
         mr.style.marginBottom = "4rem";
         ic.style.transform = "rotate(0deg)";
