@@ -29,6 +29,15 @@ body, html{
 
 
 /* ------------------------------------------------------------NAVBAR START----------------------------------------------------------- */
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
 .menu-open {
     position: fixed;
     right: 10%;
@@ -59,27 +68,24 @@ body, html{
 
 .nav{
     background-color: #023047;
-    font-size: 1.2rem;
-    padding: 0 2rem;
-    position: fixed;
-    width: 100%;
-    opacity: .9;
-    z-index: 1;
-}
-
-.container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 50px;
     flex-wrap: nowrap;
     height: 0;
+    font-size: 1.2rem;
+    padding: 0 2rem;
+    position: fixed;
+    width: 100%;
+    opacity: .9;
+    z-index: 1;
     overflow: hidden;
     transition: height .5s ease;
 }
 
 .hg{
-    height: 400px;
+    height: 410px;
 }
 
 .list{
@@ -269,10 +275,7 @@ section h3{
     .menu-open{
         display: none;
     }
-    .nav h1{
-            margin-bottom: 0 !important;
-    }
-    .container{
+    .nav{
         height: 0;
     }
 }
@@ -283,14 +286,17 @@ section h3{
         display: flex;
     }
 
-    .container{
+    .nav{
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
     }
 
-    .nav h1{
-        margin: 15px 0 4rem .5rem;
+    .nav .title{
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .list{
@@ -302,16 +308,17 @@ section h3{
 
     .list .list-items{
         width: 180px;
+        padding: .5rem 0;
     }
 
     .list .list-items a{
-        padding: 0rem .5rem;
+        padding: .5rem 1rem;
         height: 100%;
         width: 100%;
     }
 
     .soc{
-        margin: 1rem 0 1rem .5rem;
+        margin: 1.5rem 0 1rem .5rem;
     }
 
     .soc span{
