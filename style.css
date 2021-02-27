@@ -38,6 +38,10 @@ li{
     list-style: none;
 }
 
+li a{
+    min-height: 50px;
+}
+
 .menu-open {
     position: fixed;
     right: 10%;
@@ -281,6 +285,10 @@ section h3{
 }
 
 @media (max-width: 980px){
+
+    li a{
+        min-height: 0px;
+    }
 
     .menu-open{
         display: flex;
